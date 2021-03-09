@@ -701,5 +701,24 @@ img {
   .container {
     max-width: 280px;
   }
+  .navbar {
+    height: 70px;
+  }
+  .breadcrumb-list {
+    padding-bottom: 0;
+  }
+  .hotel-wrapper .stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 48px;
+    height: 8px;
+  }
+  .hotel-info__offer {
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
