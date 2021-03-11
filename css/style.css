@@ -566,6 +566,7 @@ img {
 .hotel-description {
   font-size: 12px;
   line-height: 15px;
+  margin: 0;
 }
 
 .stars {
@@ -599,6 +600,13 @@ img {
 .rating__counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: bold;
+}
+
+.rating__counter-down {
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: bold;
 }
 
 .swiper-container {
