@@ -93,20 +93,20 @@
       </div>
       <!-- info -->
       <div class="hotel-grid">
-        <div class="slider">
+        <div class="slider hotel__slider">
           <!-- Slider main container -->
           <div class="swiper-container">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <img src="img/slider-pic.jpg" alt="slide-1">
+                <img class="swiper-slide__image" src="img/slider-pic.jpg" alt="slide-1">
               </div>
               <div class="swiper-slide">
-                <img src="img/slider-pic.jpg" alt="slide-1">
+                <img class="swiper-slide__image" src="img/slider-pic.jpg" alt="slide-1">
               </div>
               <div class="swiper-slide">
-                <img src="img/slider-pic.jpg" alt="slide-1">
+                <img class="swiper-slide__image" src="img/slider-pic.jpg" alt="slide-1">
               </div>
             </div>
           
@@ -151,10 +151,10 @@
                     <button class="button booking__button">View Other Options</button>
                   </div>
                   <!-- /.booking -->
-                  <div class="map">
-                    <iframe
+                  <div id="map" class="map">
+                    <!-- <iframe
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.4348243120878!2d98.29852857518956!3d7.838140031312874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x305025650c33dbab%3A0xa67a542329d011e1!2z0J_RhdGD0LrQtdGCLCDQmtCw0YDQvtC9LCDQntGC0LXQu9GMINCl0LjQu9GC0L7QvQ!5e0!3m2!1sru!2sru!4v1615552467635!5m2!1sru!2sru"
-                      width="347" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      width="100%" height="213" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
                   </div>
                   <!-- /.map -->
         </div>
@@ -162,6 +162,9 @@
     </div>
     <!-- /.container -->
   </section>
+<script src="https://api-maps.yandex.ru/2.1/?apikey=595f5202-5345-460a-a1ab-f1ef82f1149a
+&lang=ru_RU" type="text/javascript">
+</script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/main.js"></script>
 </body>
