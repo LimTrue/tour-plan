@@ -1160,6 +1160,9 @@ img {
     height: 1px;
     background-color: #333333;
   }
+  .hotel__slider {
+    height: 320px;
+  }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -1297,8 +1300,17 @@ img {
   .hotel-info__offer {
     margin-top: 0;
   }
+  .reviews-title {
+    font-size: 18px;
+    line-height: 23px;
+    width: 246px;
+    margin-bottom: 42px;
+  }
   .map {
     height: 172px;
+  }
+  .swiper-container {
+    width: 281px;
   }
 }
 
