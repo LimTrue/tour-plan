@@ -46,6 +46,10 @@
     width: 100%
     &-container
       margin-right: 0
+  .reviews
+    &-slider
+      &__item
+        max-width: 579px
 @media (max-width: 767px)
   .container, .swiper-wrapper, .hotel-slider
     max-width: 567px
@@ -104,6 +108,20 @@
       margin-right: 20px
     &__subscribe
       width: 280px
+  .reviews
+    &-slider
+      &__button
+        top: 32px
+        left: 50%
+        transform: translate(-50%, 0)
+        &--prev
+          margin-left: -65px
+        &--next
+          margin-left: 65px
+      &__item
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
 
 @media (max-width: 576px)
   .container, .swiper-wrapper, .hotel-slider
