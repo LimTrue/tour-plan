@@ -14,6 +14,12 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
+    &__message
+      height: 123px
+
 @media (max-width: 992px)
   .container, .newsletter-wrapper, .hotel-slider, .swiper-wrapper
     max-width: 700px
@@ -34,6 +40,48 @@
       &__link
         font-size: 12px
         line-height: 15px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__input
+      flex-basis: 49%
+      // растянуть до конца строки
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 5
+      &-form
+        grid-row: 4
+        grid-column: span 5
+    &__money
+      grid-column: 6 / 6
+      width: 136px
+    &__button
+      &-switch
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__last
+      grid-column: 1 / 4
+    &__police
+      justify-content: start
   .search
     &__input
       width: 340px
@@ -174,29 +222,52 @@
   .card
     width: 49%
     height: 255px
-
+  .footer
+    &-wrapper
+      grid-row-gap: 30px
+      grid-column-gap: 0
+    &__input
+      flex-basis: 100%
+    &__last
+      grid-column: 1 / 5
 @media (max-width: 576px)
   .container, .swiper-wrapper, .hotel-slider
     max-width: 480px
-// .logo
-//   width: 99px
-.swiper
-  &-wrapper
-    // height: 320px
-.hotel
-  &-slider
-    // height: 75%
-  .newsletter
-  // height: 320px
-  &-wrapper
-    max-width: 92%
-    flex-wrap: wrap
-  .activities
-    padding-top: 40px
-    padding-bottom: 60px
-  .card
-    width: 100%
-
+  .hotel
+    &-wrapper
+      max-width: 92%
+      flex-wrap: wrap
+    .activities
+      padding-top: 40px
+      padding-bottom: 60px
+    .card
+      width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-column: 1
+        grid-row: 2
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
 @media (max-width: 480px)
   .container, .swiper-wrapper, .hotel-slider
     max-width: 320px
@@ -230,6 +301,21 @@
       &__text
         height: 266px
         overflow: scroll
+  .footer
+    &-wrapper
+      grid-template-columns: 320px
+      grid-row-gap: 30px
+      grid-column-gap: 0
+
+    &__button
+      &-switch
+        display: flex
+        flex-direction: column-reverse
+        align-items: flex-start
+    &__money
+      grid-column: 1 / 1
+    &__info
+      margin-bottom: 15px
 
 @media (max-width: 320px)
   .container, .swiper-wrapper, .hotel-slider, .newsletter-wrapper
@@ -287,3 +373,38 @@
       margin-bottom: 36px
   .card
     width: 100%
+  .footer
+    padding-bottom: 10px
+    padding-top: 69px
+    &-wrapper
+      grid-template-columns: 280px
+      grid-row-gap: 30px
+      grid-column-gap: 0
+    &__logo
+      width: 104px
+    &__social
+      &-network
+        display: grid
+        grid-template-rows: repeat(2, 1fr)
+        grid-template-columns: repeat(1, 167px)
+        grid-gap: 20px
+      &-links
+        justify-content: flex-start
+    &__title
+      &--inline
+        margin: 0
+    &__link
+      &-icons
+        margin-right: 10px
+    &__info
+      margin-bottom: 15px
+    &__police
+      &-item
+        margin-right: 7px
+    &__last
+      width: 100%
+      // border: 1px solid red
+    &__button
+      &-switch
+        display: flex
+        flex-direction: column-reverse

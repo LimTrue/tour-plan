@@ -5,7 +5,7 @@
   padding-bottom: 46px
   &-wrapper
     display: grid
-    grid-template-columns: repeat(4, minmax(min-content, 1fr) )
+    grid-template-columns: repeat(4, minmax(min-content, 1fr))
     grid-gap: 20px
     grid-auto-rows: minmax(40px, min-content)
     align-items: start
@@ -23,7 +23,7 @@
       justify-content: space-between
     &-network
       display: flex
-      align-content: start
+      align-items: start
       grid-row: 2 / 4
       grid-column: span 2
   &__text
@@ -67,9 +67,9 @@
     color: $foter-text-color
     &--mb-2
       margin-bottom: 20px
-    &__link
-      text-decoration: none
-      color: inherit
+  &__link
+    text-decoration: none
+    color: inherit
   &__input
     background: #FFFFFF
     border-radius: 4px
@@ -95,9 +95,33 @@
     background-color: $primary
     border: none
     border-radius: 4px
+    // margin-bottom: 95px
   &__info
     font-style: normal
     font-weight: bold
     font-size: 12px
     line-height: 15px
-    color: $foter-text-color
+    color: #E0E0E0
+  &__message
+    height: 123px
+    resize: none
+  &__last
+    grid-column: 2 / 4
+  &__police
+    display: flex
+    flex-direction: row
+    justify-content: center
+    &-item
+      // margin-right: 0
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      margin-right: 10px
+    &__money
+      grid-column: 3 / 4
+      width: 136px
+      height: 22px
+      &-icons
+        width: 136px
+        height: 22px
