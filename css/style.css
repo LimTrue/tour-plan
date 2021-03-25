@@ -395,7 +395,7 @@ img {
 .navbar-menu {
   list-style: none;
   margin: 0;
-  padding: 31px 0;
+  padding: 30px 0 31px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,7 +528,7 @@ img {
 }
 
 .hotel {
-  padding-top: 24px;
+  padding-top: 13px;
   padding-bottom: 70px;
 }
 
@@ -940,7 +940,7 @@ img {
 .reviews-slider__item {
   position: relative;
   max-width: 730px;
-  padding: 0 62px 30px;
+  padding: 0 99px 30px;
   margin: 45px auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1016,7 +1016,7 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: -45px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .reviews-slider__avatar {
@@ -1035,6 +1035,7 @@ img {
   line-height: 15px;
   color: #EC1F46;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .reviews-slider__date {
@@ -1072,7 +1073,7 @@ img {
 }
 
 .activities {
-  padding: 60px 0 95px 0;
+  padding: 60px 0 98px 0;
 }
 
 .activities__title {
@@ -1081,7 +1082,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-bottom: 54px;
+  margin-bottom: 57px;
   margin-top: 0;
 }
 
@@ -1211,6 +1212,12 @@ img {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
   grid-row: 1 / 4;
+  max-width: 160px;
+}
+
+.footer__legal {
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 
 .footer__social-links {
@@ -1242,6 +1249,10 @@ img {
 .footer__text {
   color: #BDBDBD;
   margin-bottom: 22px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
 }
 
 .footer__contact-details {
@@ -1404,9 +1415,9 @@ img {
   grid-column: 2 / 4;
   -ms-grid-row: 6;
   grid-row: 6;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 .footer__police {
@@ -1435,9 +1446,8 @@ img {
   grid-row: 6;
   -ms-grid-column: 4;
   grid-column: 4;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   -ms-grid-column-align: end;
       justify-self: end;
   width: 136px;
@@ -1897,6 +1907,8 @@ img {
     grid-row: 5;
     -ms-grid-column: 1;
     grid-column: 1;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
   .footer__contact-details {
     -ms-grid-row: 6;
@@ -1909,6 +1921,20 @@ img {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
+  }
+  .footer__last {
+    -ms-grid-row: 8;
+    grid-row: 8 / 8;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .footer__money {
+    -ms-grid-row: 8;
+    grid-row: 8 / 8;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 
@@ -1975,9 +2001,25 @@ img {
         -ms-flex-align: start;
             align-items: flex-start;
   }
+  .footer__last {
+    -ms-grid-row: 8;
+    grid-row: 8 / 8;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
   .footer__money {
+    -ms-grid-row: 9;
+    grid-row: 9 / 9;
     -ms-grid-column: 1;
-    grid-column: 1 / 1;
+    grid-column: 1;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
   .footer__info {
     margin-bottom: 15px;

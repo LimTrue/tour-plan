@@ -269,6 +269,7 @@
       flex-basis: 100%
     &__last
       grid-column: 1 / 5
+
 @media (max-width: 576px)
   .container, .swiper-wrapper, .hotel-slider
     max-width: 480px
@@ -300,6 +301,7 @@
     &__legal
       grid-row: 5
       grid-column: 1
+      justify-self: start
     &__contact
       &-details
         grid-row: 6
@@ -307,6 +309,13 @@
       &-form
         grid-row: 7
         grid-column: 1
+    &__last
+      grid-row: 8 / 8
+      align-self: center
+    &__money
+      grid-row: 8 / 8
+      align-self: center
+
 @media (max-width: 480px)
   .container, .swiper-wrapper, .hotel-slider
     max-width: 320px
@@ -345,14 +354,20 @@
       grid-template-columns: 320px
       grid-row-gap: 30px
       grid-column-gap: 0
-
     &__button
       &-switch
         display: flex
         flex-direction: column-reverse
         align-items: flex-start
+    &__last
+      grid-row: 8 / 8
+      align-self: center
+      justify-self: start
     &__money
-      grid-column: 1 / 1
+      grid-row: 9 / 9
+      grid-column: 1
+      align-self: center
+      justify-self: start
     &__info
       margin-bottom: 15px
 
