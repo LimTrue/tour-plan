@@ -1,0 +1,165 @@
+.packages
+  padding-top: 40px
+  padding-bottom: 70px
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 65px
+    margin-top: 0
+  &-wrapper
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr))
+    grid-gap: 30px
+    align-items: flex-start
+  &-card
+    display: flex
+    position: relative
+    &__image
+      min-height: 250px
+      max-height: 250px
+      min-width: 350px
+      object-fit: cover
+    &-big
+      display: flex
+      grid-column: span 2
+      position: relative
+      &__image
+        min-width: 350px
+        height: 500px
+        border-radius: 8px 0 0 8px
+    &_small
+      flex-direction: column
+      grid-column: span 1
+      border-radius: 8px
+      overflow: hidden
+  .info-small
+    padding: 30px 21px 35px 32px
+    background-color: $dark
+    color: $light
+    border-radius: 0 0 8px 8px
+    &__title
+      margin-bottom: 23px
+      margin-top: 0
+    &__icons
+      display: flex
+      align-items: center
+      margin-top: 23px
+      margin-bottom: 24px
+      &-block
+        width: 14px
+        height: 65px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-right: 14px
+        padding-bottom: 4px
+    // &-price
+    //   display: flex
+    //   justify-content: space-between
+    //   align-items: center
+  .info-big
+    padding: 46px 21px 30px 43px
+    background-color: $dark
+    color: $light
+    border-radius: 0 8px 8px 0
+    &__stars
+      height: 8px
+      width: 48px
+      margin-bottom: 5px
+      display: flex
+      justify-content: space-between
+    &__title
+      margin-bottom: 27px
+      margin-top: 0
+    &__text
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 160.6%
+    &__icons
+      display: flex
+      align-items: center
+      margin-top: 35px
+      margin-bottom: 37px
+      &-block
+        width: 14px
+        height: 65px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin-right: 14px
+        padding-bottom: 4px
+      &-text
+        display: flex
+        flex-direction: column
+        height: 67px
+        justify-content: space-between
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+    &__icon
+      width: 14px
+      height: 14px
+  .info-small
+    max-height: 250px
+    &__icons
+      display: flex
+      align-items: center
+      &-text
+        display: flex
+        flex-direction: column
+        height: 67px
+        justify-content: space-between
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+  // bem
+  &-reprice
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    text-decoration-line: line-through
+  &-price
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &_small
+      flex-direction: row
+    &__num
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 30px
+  &-button
+    width: 120px
+    height: 40px
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+  .flash-offer
+    position: absolute
+    top: 5%
+    left: 0
+    padding: 8px 12px 7px 11px
+    font-style: normal
+    font-size: 12px
+    line-height: 15px
+    width: 95px
+    height: 30px
+    background: #EC1F46
+    color: $light
+    border-radius: 0px 4px 4px 0px
+    &_small
+      height: 18px
+      width: 60px
+      font-size: 8px
+      line-height: 10px
+      text-align: center
+      padding: 4px 2px

@@ -14,18 +14,44 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    &-wrapper
+      // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+      grid-template-columns: repeat(6, 147px)
+      grid-template-rows: repeat(2, 500px )
+      grid-gap: 15px
+    &-card
+      grid-column: span 2
+      &-big
+        grid-column: span 4
+        &__image
+          min-width: 320px
+      &__image
+        &-small
+          min-height: 250px
+    &-button
+      // min-width: 120px
+  .info
+    &-small
+      max-height: 250px
+    &-big
+      max-height: 500px
+      padding-bottom: 10px
   .footer
     &__input
       flex-basis: 100%
     &__message
       height: 123px
-
+    &-button
+      // min-width: 100px
 @media (max-width: 992px)
   .container, .newsletter-wrapper, .hotel-slider, .swiper-wrapper
     max-width: 700px
   .swiper
     &-container
       margin-right: 0
+  .user
+    margin-left: 27px
   .logo
     width: 132px
   .navbar
@@ -35,11 +61,23 @@
     &__search
       margin-left: auto
     &-menu
-      padding-top: 22px
+      // padding-top: 22px
+      // padding-bottom: 22px
+      // margin-left: 13px
+      padding-top: 19px
       padding-bottom: 22px
+      margin-left: 14px
+      margin-right: 14px
       &__link
         font-size: 12px
         line-height: 15px
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(2, 350px )
+    &-card
+      grid-column: span 1
+      &-big
+        grid-column: span 2
   .footer
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
@@ -130,8 +168,11 @@
   .card
     width: 340px
     height: 255px
-
     &__image
+  .modal
+    &__button
+      &-switch
+        width: 302px
 @media (max-width: 767px)
   .container, .swiper-wrapper, .hotel-slider
     max-width: 567px
@@ -174,6 +215,9 @@
         &__mobile
           &_visible
             display: block
+  .breadcrumb
+    &-list
+      padding-top: 96px
   .menu
     &-button
       width: 16px
@@ -216,6 +260,69 @@
         margin-bottom: 0
       &__description
         margin: 5px 0
+  .packages
+    border-radius: none
+    &__title
+      margin-bottom: 45px
+    &-wrapper
+      grid-template-columns: repeat(2, 279px)
+      grid-template-rows: repeat(1, 568px )
+      grid-gap: 10px
+    &-card
+      &__image
+        &-small
+          object-fit: cover
+      &-big
+        grid-column: span 2
+        flex-direction: column
+        border-radius: 8px
+        overflow: hidden
+        &__image
+          height: 270px
+          object-fit: cover
+      &__item
+        &_small
+          // object-fit: cover
+    &-button
+      // width: 70%
+    &-price
+      &__num
+        font-size: 22px
+    &-reprice
+      font-size: 16px
+    .info-big
+      display: flex
+      flex-direction: column
+      align-items: center
+      padding-left: 20px
+      padding-right: 20px
+      padding-bottom: 10px
+      padding-top: 20px
+      border-radius: 0
+      &__text
+        display: none
+      &__title
+        margin-top: 10px
+        font-size: 21px
+        line-height: 23px
+      &__icons
+        margin-top: 0
+        margin-bottom: 15px
+    .info-small
+      padding-left: 20px
+      padding-right: 10px
+      padding-bottom: 10px
+      padding-top: 15px
+    &-price
+      flex-direction: column
+      height: 95px
+      justify-content: space-between
+      &_small
+        flex-direction: row
+  .big-wrapper
+    display: flex
+    align-items: center
+
   .stars
     flex-basis: auto
   .slider
@@ -269,6 +376,14 @@
       flex-basis: 100%
     &__last
       grid-column: 1 / 5
+  .modal
+    &__dialog
+      max-width: 478px
+    &__button
+      &-switch
+        height: 80px
+        flex-direction: column-reverse
+        justify-content: space-between
 
 @media (max-width: 576px)
   .container, .swiper-wrapper, .hotel-slider
@@ -282,6 +397,21 @@
       padding-bottom: 60px
     .card
       width: 100%
+  .packages
+    &-wrapper
+      grid-template-columns: repeat(2, 235px)
+      grid-template-rows: repeat(1, 568px)
+      grid-gap: 10px
+    &-card
+      grid-column: span 2
+      flex-direction: column
+    &-price
+      &_small
+        height: 50px
+        width: 438px
+  .info-small
+    &__title
+      text-align: center
   .footer
     &-wrapper
       grid-template-columns: 1fr
@@ -315,6 +445,14 @@
     &__money
       grid-row: 8 / 8
       align-self: center
+  .modal
+    &__dialog
+      max-width: 478px
+    &__button
+      &-switch
+        height: 80px
+        flex-direction: column-reverse
+        justify-content: space-between
 
 @media (max-width: 480px)
   .container, .swiper-wrapper, .hotel-slider
@@ -370,7 +508,29 @@
       justify-self: start
     &__info
       margin-bottom: 15px
-
+  .search__input
+    width: 320px
+  .modal
+    &__dialog
+      max-width: 300px
+      padding: 33px 35px
+    &__button
+      &-switch
+        height: 80px
+        max-width: 230px
+        flex-direction: column-reverse
+        align-items: center
+  .packages
+    padding-top: 15px
+    padding-bottom: 20px
+    &__title
+      font-size: 34px
+      margin-bottom: 35px
+    &-wrapper
+      grid-template-columns: repeat(2, 155px)
+    &-price
+      &_small
+        width: 285px
 @media (max-width: 320px)
   .container, .swiper-wrapper, .hotel-slider, .newsletter-wrapper
     max-width: 280px
@@ -466,3 +626,22 @@
       &-switch
         display: flex
         flex-direction: column-reverse
+  .packages
+    &__title
+      font-size: 30px
+    &-wrapper
+      grid-template-columns: repeat(2, 135px)
+    &-price
+      &_small
+        width: 245px
+    &-button
+      min-width: 120px
+  .search__input
+    max-width: 280px
+  .modal
+    &__dialog
+      max-width: 280px
+      padding: 33px 35px
+    &__button
+      &-switch
+        max-width: 210px
