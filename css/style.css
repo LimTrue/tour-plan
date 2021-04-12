@@ -1646,10 +1646,6 @@ img {
           align-items: center;
 }
 
-.modal__dialog--visible:hover {
-  height: 100vh;
-}
-
 @media (max-width: 1200px) {
   .container, .swiper-wrapper, .hotel-slider {
     max-width: 960px;
@@ -2625,6 +2621,12 @@ img {
   }
   .modal__button-switch {
     max-width: 210px;
+  }
+}
+
+@media (max-height: 500px) {
+  .modal__dialog--visible:hover {
+    height: 100vmin;
   }
 }
 /*# sourceMappingURL=style.css.map */
