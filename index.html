@@ -397,9 +397,13 @@ was a good experience and could recommend.</p>
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-              <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+              </div>
+              <div class="footer__input-group">
+                <input type="text" class="input footer__input modal__input-phone"  placeholder="Phone Number*" name="phone" required>
+              </div>
               <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <div class="footer__button-switch">
               <button class="button footer__button" type="submit">Send</button>
@@ -438,10 +442,10 @@ was a good experience and could recommend.</p>
         <img src="img/close.svg" alt="close icon">
       </a>
       <h3 class="modal__title modal__title--mb-3">booking</h3>
-      <form action="send.php" method="POST" class="modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-        <input type="text" class="input modal__input" placeholder="Email*" name="email">
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input type="text" class="input modal__input modal__input-phone"  placeholder="Phone Number*" name="phone" required>
+        <input type="text" class="input modal__input" placeholder="Email*" name="email" required>
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__button-switch">
           <button class="button modal__button" type="submit">Send</button>
@@ -458,10 +462,10 @@ was a good experience and could recommend.</p>
         <img src="img/close.svg" alt="close icon">
       </a>
                 <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
-                <form action="send.php" method="POST" class="modal__form">
-                  <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-                  <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-                  <input type="text" class="input modal__input" placeholder="Email*" name="email">
+                <form action="send.php" method="POST" class="modal__form form">
+                  <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
+                  <input type="text" class="input modal__input modal__input-phone"  placeholder="Phone Number*" name="phone" required>
+                  <input type="text" class="input modal__input" placeholder="Email*" name="email" required>
                   <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
                   <div class="modal__button-switch">
                     <button class="button modal__button" type="submit">Send</button>
@@ -476,6 +480,8 @@ was a good experience and could recommend.</p>
 <script src="https://api-maps.yandex.ru/2.1/?apikey=595f5202-5345-460a-a1ab-f1ef82f1149a&lang=ru_RU">
 </script>
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
