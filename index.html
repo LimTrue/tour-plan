@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Best tour plan - Hotel Booking</title>
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
@@ -14,16 +15,16 @@
   <header class="navbar navbar__mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="https://coockieshere.ru/Homework/lesson-26" class="logo">
+        <a href="https://coockieshere.ru/Homework/lesson-29" class="logo" data-aos="fade-up" data-aos-delay="100">
           <img src="img/Horizontal-logo.svg" alt="Logo: Best tour plan" class="logo__image">
         </a>
-        <form action="#" class="search navbar__search navbar__search__mobile_hidden">
+        <form action="#" class="search navbar__search navbar__search__mobile_hidden" data-aos="fade-up" data-aos-delay="200">
           <input type="text" class="search__input" placeholder="Search Location">
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search" class="search__icon">
           </button>
         </form>
-        <a href="#" class="user navbar__user navbar__user__mobile_hidden">
+        <a href="#" class="user navbar__user navbar__user__mobile_hidden" data-aos="fade-up" data-aos-delay="300">
           <img src="img/user-image.jpg" alt="avatar: Nathan" class="user__avatar ">
           <span class="user__name">Nathan</span>
         </a>
@@ -174,12 +175,12 @@
   </section>
   <section class="newsletter">
     <div class="newsletter-wrapper">
-      <h2 class="newsletter-title">
+      <h2 class="newsletter-title" data-aos="fade-right" data-aos-offset="350" data-aos-easing="ease-in-sine">
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-              <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-                <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
+              <form action="send.php" method="POST" class="subscribe newsletter__subscribe form" data-aos="fade-left" data-aos-offset="350" data-aos-easing="ease-in-sine">
+                <input type="email" class="subscribe__input modal__input-email" placeholder="Your email address" name="email" required minlength="9">
                 <button class="subscribe__button">
                   Send
                 </button>
@@ -189,7 +190,7 @@
   <!-- newsletter end -->
   <section class="reviews">
 <div class="container">
-  <h2 class="reviews-title">
+  <h2 class="reviews-title" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="450">
     What people think about us
   </h2>
   <!-- Slider main container -->
@@ -262,25 +263,25 @@ was a good experience and could recommend.</p>
     <div class="container">
       <h2 class="activities__title">Other Activities</h2>
       <div class="activities-wrapper">
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
                   <img src="img/act-card-1.jpg" alt="The curious corner of chamarel" class="card__image">
                   <h3 class="card__title card__title_1">The curious corner of chamarel</h3>
                   <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
                 </div>
                 <!-- card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
                   <img src="img/act-card-2.jpg" alt="Gymkhana club golf course" class="card__image">
                   <h3 class="card__title card__title_2">Gymkhana club golf course</h3>
                   <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
                 </div>
                 <!-- card -->
-                <div class="card activities__card">
+                <div class="card activities__card" data-aos="fade-up" data-aos-delay="500">
                   <img src="img/act-card-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
                   <h3 class="card__title card__title_3">Tamarind falls hiking trip - full day</h3>
                   <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
                 </div>
                 <!-- card -->
-        <div class="card activities__card">
+        <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
           <img src="img/act-card-4.jpg" alt="The blue marine discovery quest" class="card__image">
           <h3 class="card__title card__title_4">The blue marine discovery quest</h3>
           <button class="card__button" data-toggle="modal" data-href="#booking-modal">Book Now</button>
@@ -292,7 +293,7 @@ was a good experience and could recommend.</p>
   </section>
   <footer class="footer">
     <div class="container">
-      <div class="footer-wrapper"> <a href="https://coockieshere.ru/Homework/lesson-26" class="logo footer__logo">
+      <div class="footer-wrapper"> <a href="https://coockieshere.ru/Homework/lesson-29" class="logo footer__logo">
         <img src="img/vertical-logo.svg" alt="Best tour plan" ></a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title footer__title_19">ALL CATEGORIES</h3>
@@ -395,14 +396,14 @@ was a good experience and could recommend.</p>
           </ul>
         </div>
         <!-- /.footer__contact-details -->
-        <div class="footer__contact-form">
+        <div class="footer__contact-form" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
           <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
-                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required minlength="2">
               </div>
               <div class="footer__input-group">
-                <input type="text" class="input footer__input modal__input-phone"  placeholder="Phone Number*" name="phone" required>
+                <input type="tel" class="input footer__input modal__input-phone"  placeholder="Phone Number*" name="phone" required minlength="16" >
               </div>
               <textarea class="message footer__message" placeholder="Message" name="message"></textarea>
               <div class="footer__button-switch">
@@ -444,8 +445,8 @@ was a good experience and could recommend.</p>
       <h3 class="modal__title modal__title--mb-3">booking</h3>
       <form action="send.php" method="POST" class="modal__form form">
         <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-        <input type="text" class="input modal__input modal__input-phone"  placeholder="Phone Number*" name="phone" required>
-        <input type="text" class="input modal__input" placeholder="Email*" name="email" required>
+        <input type="tel" class="input modal__input modal__input-phone"  placeholder="Phone Number*" name="phone" required minlength="16">
+        <input type="email" class="input modal__input modal__input-email" placeholder="Email*" name="email" required minlength="9">
         <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
         <div class="modal__button-switch">
           <button class="button modal__button" type="submit">Send</button>
@@ -464,8 +465,8 @@ was a good experience and could recommend.</p>
                 <h3 class="modal__title modal__title--mb-3">Send us a feedback</h3>
                 <form action="send.php" method="POST" class="modal__form form">
                   <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required minlength="2">
-                  <input type="text" class="input modal__input modal__input-phone"  placeholder="Phone Number*" name="phone" required>
-                  <input type="text" class="input modal__input" placeholder="Email*" name="email" required>
+                  <input type="tel" class="input modal__input modal__input-phone"  placeholder="Phone Number*" name="phone" required minlength="16">
+                  <input type="email" class="input modal__input modal__input-email" placeholder="Email*" name="email" required minlength="9">
                   <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
                   <div class="modal__button-switch">
                     <button class="button modal__button" type="submit">Send</button>
@@ -481,7 +482,9 @@ was a good experience and could recommend.</p>
 </script>
 <script src="js/swiper-bundle.min.js"></script>
 <script src="js/jquery.mask.min.js"></script>
+<script src="js/inputmask.js"></script>
 <script src="js/jquery.validate.min.js"></script>
+<script src="js/aos.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

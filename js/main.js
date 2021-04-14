@@ -90,18 +90,21 @@ $('.form').each(function(){
   errorClass: "invalid",
   messages: {
     name: {
-      required: "Укажите имя",
-      minlength: "Имя должно быть не короче 2 букв"
+      required: "Write your name",
+      minlength: "Name must contain at least 2 letters"
     },
     email: {
       required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com"
+      email: "email format name@domain.com",
+      minlength: "Please, enter correct email"
     },
       phone: {
-        required: "Телефон обязателен",
+        required: "Phone is required",
+        minlength: "Please, use format +7(999)999-99-99"
     },
   }
 });
 })
   $('.modal__input-phone').mask('+7(999)999-99-99');
+AOS.init();
 });
